@@ -32,7 +32,7 @@ def inference(datapath, outpath, modelpath, batch_size=8):
     if outpath.endswith(".csv"):
         filename = outpath.split("/")[-1]
         outpath = '/'.join(outpath.split("/")[:-1])
-        
+
     if not os.path.exists(outpath):
         os.makedirs(outpath)
 
