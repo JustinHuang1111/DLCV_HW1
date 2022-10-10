@@ -1,3 +1,1 @@
-#!/bin/bash
-
-# TODO - run your inference Python3 code
+python3 ./hw1a/inference.py --input $1 --output $2 --model ./hw1a/ckpt/inceptionv3_best_0.87.ckpt

@@ -4,3 +4,7 @@
 hw1_data/*
 *png
 *jpg
+__pycache__/
+shellscript_test.ipynb
+.DS_Store
+archive
