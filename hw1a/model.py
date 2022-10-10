@@ -57,7 +57,7 @@ class MyInceptionV3(nn.Module):
         # torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
         # torch.nn.MaxPool2d(kernel_size, stride, padding)
         # input 維度 [3, 128, 128]
-        self.inceptionv3 = models.inception_v3(weights='IMAGENET1K_V1')
+        self.inceptionv3 = models.inception_v3()
         self.fc = nn.Sequential(
             nn.BatchNorm1d(1000),
             # nn.Dropout(p=0.5), # new added

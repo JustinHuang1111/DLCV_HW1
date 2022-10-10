@@ -37,9 +37,7 @@ class FCN32(nn.Module):
 class Deeplab(nn.Module):
     def __init__(self):
         super(Deeplab, self).__init__()
-        self.deeplab = models.segmentation.deeplabv3_resnet50(
-            weights=None, num_classes=7
-        )
+        self.deeplab = models.segmentation.deeplabv3_resnet50(num_classes=7)
         for m in self.modules():
             if isinstance(m, nn.Linear or nn.Conv2d):
                 m.weight.data = nn.init.xavier_uniform_(
